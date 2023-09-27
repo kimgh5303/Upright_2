@@ -1,4 +1,3 @@
-# Upright_2
 change for AI Version
 
 프로젝트 이름 : 캡스톤 Upright 프로젝트
