@@ -70,7 +70,7 @@ callbacks = keras.callbacks.EarlyStopping(monitor='val_loss', patience=5)
 mc = keras.callbacks.ModelCheckpoint(r'abcd/best_model.h5', monitor='val_loss', mode='min', save_best_only=True)
 
 #모델 학습 방법 정의 
-model.compile(optimizer=Adam(learning_rate=0.0001),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
+model.compile(optimizer=Adam(learning_rate=0.001),loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 #모델 학습
 history=model.fit(trainX, trainY, epochs=30, batch_size=8, validation_split=0.2)
 # , callbacks=[callbacks, mc]
